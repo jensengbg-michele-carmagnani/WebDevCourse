@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+
+    <title>San Valentino</title>
+    <style>
+        .heart {
+            position: center;
+            resolution: 20px; 
+            width: 200px;
+            height: 200px;
+            transform: rotate(45deg);
+            background: red;
+        }
+        .heart: before , 
+        .heart: after {
+           position: abosolute;
+           top:4px;
+            content:"";
+            width: 100px;
+            height:160px;
+            background: red; 
+            border :  1px solid black;
+            border-radius: 50px 50px 0 0;
+
+
+        }
+        .heart:before {
+            left: 100px;
+            -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+
+            transform-origin: 0 100%;
+            -webkit-transform-origin: 0 100%;
+        }
+        .heart:after {
+            left: 0;
+
+            -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+
+            transform-origin: 100% 100%;
+            -webkit-transform-origin: 100% 100%;
+        }
+    </style>
+  </head>
+  <body>
+    <div class= "heart"></div>
+
+   
+  </body>
+</html>

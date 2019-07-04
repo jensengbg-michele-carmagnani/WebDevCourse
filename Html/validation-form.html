@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Validation Form</title>
+</head>
+<body>
+<H1>LOGIN</H1>
+
+	<!-- <form action="http://wikipedia.org" method="get">
+		action dove il form manda i dati
+		method  quale HTTP metodo (Get/Post)
+		<label > Username:
+			<input type="text"  name="username" placeholder="username">
+		</label>
+		<label>Password:
+		<input type="password" name="password" placeholder="password">
+		</label>
+		<input type="subit" >
+	</form> -->
+
+	<form action="http://wikipedia.org" method="get">
+		<!-- action dove il form manda i dati -->
+		<!-- method  quale HTTP metodo (Get/Post) -->
+		
+		<label for="Username"> Email:</label>
+			<input id="Username" type="email"  name="username" placeholder="username" required="">
+			<!-- required fa in modo che sia presente del testo nella casella input -->
+			<!-- con opzione type="email" faccio in modo che la casella input abbia un mail valida -->
+		
+		<label for="password">Password:</label>
+		<input id="password" type="password" name="password" placeholder="password" required="">
+		<!-- required fa in modo che sia presente del testo nella casella input -->
+		<button>Submit	</button>
+	</form>
+</body>
+</html>
